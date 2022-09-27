@@ -1,0 +1,12 @@
+---
+Software Automation Engineer(4 Months)
+====
+ALPLER AGRICULTURAL TOOLS I.C. Aydin, Turkey
+----
+---
+* I preferred to work in the waiting period before doing my military service.
+* The work of necessities in the factory with `DELTA`,`DOPBSOFT` and `WPLSOFT`.
+* HMI to `PLC` communication, `C2000 Driver`; Torque Controlled Motor Driving,
+* `HMI` interface design, VFD and DTC AC motor drive methods.
+
+![Just a photo!](./assets/images/automation.jpg)

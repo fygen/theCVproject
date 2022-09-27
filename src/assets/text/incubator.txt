@@ -1,0 +1,4 @@
+It was a project where I prepared the program with `C#` Windows Form Applications and provided the
+communication with the `Arduino`, where I provided `Two-Way-Communication` via bluetooth, getting the values for graphing the
+Heat, Humidity and Temperature and relay on or off values on the computer and sending the Degree value for controlling it. I created it for our own
+blue egg Ameraucana type chickens on the need.

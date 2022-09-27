@@ -1,0 +1,62 @@
+{
+     "about":  "![this.isme](./folders/about/plhldr.jpg)
+
+     FATIH YEGEN
+     ===
+     Jr. FrontEnd JS&React Developer
+     Electrics&Electronics Engineer
+     --
+     
+     I started coding with Python and after that Html-Css, JavaScript, React, D3, three.js, ...
+     
+     PHONE
+     ---
+     +90 505 034 0009
+     
+     MAIL
+     ---
+     fatihyegen.09@gmail.com
+     
+     WEBSITE
+     ---
+     Made with ReactV18.2 + SCSS + ReactMarkdown
+     
+     SOCIAL
+     --
+     [![fatihyegen](./folders/about/linkedin.svg)](https://www.linkedin.com/in/fatihyegen/ 'View on Linkedin')
+     [![fatihyegen](./folders/about/square-github-brands.svg)](https://github.com/fygen 'View on Github')
+     [![fatihyegen](./folders/about/square-instagram-brands.svg)](https://www.instagram.com/yegane.fatih/ 'View on Instagram')
+     
+     CERTIFICATES
+     ---
+     [JS Algorithms and Data Structures](https://www.freecodecamp.org/certification/fygen/javascript-algorithms-and-data-structures 'FreeCodeCamp Certification')
+     --
+     [Resp. Web Design](https://www.freecodecamp.org/certification/fygen/responsive-web-design "FreeCodeCamp Certification")
+     --
+     REACT PROJECTS
+     ---
+     [25+5 Clock](https://codepen.io/fygen/pen/qBoWYLj)
+     --
+     [Js Calculator](https://codepen.io/fygen/pen/PoQQBxo)
+     --
+     [Drumpad](https://codepen.io/fygen/pen/dyJxdeJ)
+     --
+     [Markdown Renderer](https://codepen.io/fygen/pen/qBpzErb)
+     --
+     [Random Quoter](https://codepen.io/fygen/pen/rNpqZmr)
+     --`",
+     "projects": {
+          "reactjs": "",
+          "vertibird": "",
+          "matlab": "",
+          "incubator": "",
+          "java": "",
+          "thesis": ""
+     },
+     "experiences": {
+          "lieutenant": "",
+          "automation": "",
+          "arge": "",
+          "production": ""
+     }
+}

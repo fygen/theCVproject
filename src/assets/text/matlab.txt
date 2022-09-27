@@ -1,0 +1,11 @@
+﻿In this lesson, which we have studied on `Matlab`, I have reduced the workload of the user by
+making `Supervised Learning` into `Semi-Supervised Learning` by bringing a new order in the codes. I
+used the sounds and the decomposition of the `artificial neural networks` we have created. In this way, in the new 
+data entry of the sounds;
+>The machine could classify the new data and tell which one it was, and if it was wrong, it
+could save it as new audio data for calculating new SVM. 
+
+And the program was able to create a better version by calculating
+the best SVM (Support Vector Machine) again according to the number of neural networks to be
+automatically selected after 10 new data entries. About this project contact my Optimisation Techniques teacher
+“Serdar Iplikçi Prof. at Pamukkale University” on [Linkedin](https://www.linkedin.com/in/serdar-iplikci-71900928/?originalSubdomain=tr).

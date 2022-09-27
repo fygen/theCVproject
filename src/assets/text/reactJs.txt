@@ -1,0 +1,8 @@
+Coding about `Python` is started with my interest of which language is the fastest and easiest to
+automize create files and do things. I made subtitle converters for youtube which usable as .srt in file system.
+Automized it with `Selenium` and `beautifulSoup` so I can pull data easily, made some automized image
+converters for the automized website builder I build with `Html`,`Css`,Js...
+
+Then I started from the beginning HTML, CSS, JS from the MozillaPage known as MDN, then FreeCodeCamp and got some certificates.
+The moral of mine was a comment from the youtube about `JavaScript`(EcmaScript) because that
+language is one of the most important language in websites also with `React`(&Native); compatible with nearly anything now.

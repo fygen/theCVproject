@@ -1,0 +1,17 @@
+---
+Engineer Intern(30 Work Days)
+===
+Ugur Deep Freezers I.C. Aydin, Turkey
+---
+----
+* As a production engineer intern, learnt the faults that occur in the production lines,
+the factors that slow down the production and the sensors that manage the band.
+* Creating designs and electrical drawings for the new freezers in the R&D. Learning the
+freezer electrical connections and their energy diagrams, communications, Freezer efficiency analyzes with
+climate control rooms. Learning `solidworks` and `blender` and making simple designs.
+
+![This is a solid foundation](./assets/images/production.png)
+![I love it when its free blender](./assets/images/production2.png)
+
+* In the Quality Control section, solving the problems of the sold freezers with the customer
+feedback, Tests of the freezers which ordered; strength, temperature, efficiency..

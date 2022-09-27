@@ -1,0 +1,322 @@
+:root {
+     --whitefornight: white;
+     --blackfornight: black;
+     --expand: 100vw;
+     --elem-vw: 100vw;
+     --elem-vh: 100vh;
+     background-color: var(--blackfornight);
+     color: var(--whitefornight);
+}
+
+.options {
+     width: 20px;
+     fill: currentColor;
+}
+
+body {
+     -ms-overflow-style: none;
+     /* Internet Explorer 10+ */
+     scrollbar-width: none;
+     /* Firefox */
+}
+
+body::-webkit-scrollbar {
+     display: none;
+     /* Safari and Chrome */
+}
+
+%borders {
+     border: solid 1px var(--whitefornight);
+     border-radius: 5px;
+}
+
+.border {
+     @extend %borders;
+     margin: 0;
+     margin-bottom: 8px;
+}
+
+.partify {
+     flex-shrink: 1;
+}
+
+.flexb {
+     display: flex;
+}
+
+.grow {
+     flex-grow: 1;
+}
+
+.shrink {
+     flex-shrink: 1;
+     align-items: center;
+     max-width: 75px;
+     max-height: 45px;
+     animation: slideToRight 1s 2;
+}
+
+%sticky {
+     position: sticky;
+     top: 10px;
+     align-self: flex-start;
+}
+
+.debug {
+     @extend %sticky;
+     top: 10px;
+}
+
+.controls {
+     @extend %sticky;
+}
+
+.center {
+     float: left;
+     margin: 50%;
+}
+
+.hidden {
+     display: none;
+}
+
+.flex {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+.spacebtw {
+     justify-content: space-between;
+}
+
+.flexer {
+     flex-grow: 1;
+}
+
+code {
+     border-radius: 2px;
+     color: var(--blackfornight);
+     background-color: var(--whitefornight);
+     font-weight: bold;
+}
+
+h1,
+h2 {
+     @extend %neonize;
+}
+
+#about {
+     @extend %sticky;
+     @extend %borders;
+     text-align: center;
+
+     div>h2>a {
+          // @extend %borders;
+          @extend %neonize;
+          color: var(--whitefornight);
+          text-decoration: none;
+
+          &:hover {
+               color: red;
+               --whitefornight: red;
+          }
+     }
+
+     div>p:nth-child(1)>img {
+          max-width: 33%;
+          border-radius: 5px;
+     }
+
+     div>p {
+          display: flex;
+          justify-content: space-evenly;
+
+          a>img {
+               width: 25%;
+               height: 75%;
+               background: black !important;
+               color: white !important;
+               @extend %borders;
+               animation: realisticJump 2.7s 1 cubic-bezier(0.280, 0.840, 0.420, 1);
+
+               &:hover {
+                    animation: none;
+                    transform: scale(1.25);
+               }
+          }
+     }
+}
+
+#about>div>h2>a>img {
+     width: 90%;
+     transition: 0.25s;
+
+     &:hover {
+          width: 150%;
+          margin-left: -25%;
+          transition: 0.25s;
+     }
+}
+
+#experiences {
+     &:hover {
+          opacity: 0.9;
+     }
+
+     @extend %borders;
+     margin-left: 0px !important;
+
+     .experience {
+          justify-content: center;
+          align-items: center;
+     }
+
+     h1,
+     h2 {
+          text-align: center;
+     }
+
+     img {
+          margin: 0 25% !important;
+          max-height: 50%;
+          width: 50%;
+     }
+}
+
+%neonize {
+     text-shadow: 0 0 4px var(--whitefornight), 0 0 11px var(--whitefornight), 0 0 19px var(--whitefornight),
+          0 0 40px var(--whitefornight) !important;
+}
+
+%ionize {
+     box-shadow: inset 0 0 4px var(--whitefornight), inset 0 0 11px var(--whitefornight),
+          inset 0 0 19px var(--whitefornight), inset 0 0 40px var(--whitefornight) !important;
+}
+
+%oinize {
+     box-shadow: 0 0 4px var(--whitefornight), 0 0 11px var(--whitefornight), 0 0 19px var(--whitefornight),
+          0 0 40px var(--whitefornight) !important;
+}
+
+.header {
+     margin: 1px;
+     text-align: center;
+     color: var(--whitefornight);
+     @extend %neonize;
+}
+
+#app {
+     @extend %borders;
+     padding-bottom: 5px;
+}
+
+.sections {
+     display: flex;
+     justify-content: space-around;
+
+     .section {
+          max-width: 30vw;
+     }
+}
+
+.project {
+     @extend %borders;
+     margin-bottom: 8px;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     max-width: var(--elem-vw);
+     max-height: 60vh;
+     overflow: hidden;
+
+     .expImg {
+          opacity: 0.2;
+          max-width: inherit;
+          min-height: inherit;
+          max-height: inherit;
+     }
+
+     .expText {
+          position: absolute;
+          margin-top: -15px;
+          max-width: 40vw;
+     }
+
+     .expHead {
+          position: relative;
+          text-align: center;
+
+          @extend %neonize;
+     }
+
+     .expInfo {
+          position: relative;
+          text-align: justify;
+     }
+
+     a {
+          background-color: white;
+          color: black;
+          opacity: 0.75;
+          border-radius: 3px;
+
+          &:hover {
+               color: white;
+               background-color: black;
+          }
+     }
+}
+
+.project:hover {
+     opacity: 0.9;
+}
+
+.expand {
+     min-width: 96vw;
+     min-height: 100vh;
+     margin-left: -33vw;
+}
+
+@keyframes slideToRight {
+     0% {
+          transform: scale(0.75) translateX(-20vw);
+     }
+
+     100% {
+          transform: scale(1) translateX(-5px);
+
+     }
+}
+
+
+@keyframes realisticJump {
+     0% {
+          transform: scale(1, 1) translateY(0) rotate(0deg);
+     }
+
+     10% {
+          transform: scale(1.1, .9) translateY(0) rotate(0deg);
+     }
+
+     30% {
+          transform: scale(.9, 1.1) translateY(-100px) rotate(200deg);
+     }
+
+     50% {
+          transform: scale(1.05, .95) translateY(0) rotate(340deg);
+     }
+
+     57% {
+          transform: scale(1, 1) translateY(-7px) rotate(360deg);
+     }
+
+     64% {
+          transform: scale(1, 1) translateY(1) rotate(360deg);
+     }
+
+     100% {
+          transform: scale(1, 1) translateY(0) rotate(360deg);
+     }
+}

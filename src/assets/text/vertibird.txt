@@ -1,0 +1,9 @@
+-------
+The project was about a computer which has its own OPERAND, OPCODE design, ALU unit, RAM and
+ROM, which the RAM was coded by translated HEX code(Machine Code) from which I created the assembly
+code from `C language`. The processor and all the parts are realized using a program called `LOGISIM` which
+helps to create CLK and other Logic gates and simulating them in real time. Assembly code(ing)(Hex for
+RAM) for the project which was about adding squared numbers in a sequence. Created a `Verilog` file for
+unit 22f16c6 version of `FPGA DE0-NANO`.
+
+[Watch it on Youtube](https://www.youtube.com/watch?v=OYWDSDwgbp8)

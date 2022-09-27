@@ -1,0 +1,15 @@
+---
+ARGE Research Intern(30 Work Days)
+====
+HAUS(Hakki Usta) Santrifuge Technologies Aydin, Turkey
+----
+---
+* Example applications with Siemens `S7-1200`, error corrections.
+* Traffic Lights Implementation with Tia-Portal `Simatic`, Simulation of Conveyors and
+Selector Conveyor `Ladder Diagrams` with `Tia-Portal` and `Factory IO`.
+
+![Traffic Lights Implementation](./assets/images/arge2.png)
+![FactoryIO controlled with TiaPortal-Simatic](./assets/images/arge.png)
+
+* Optimizing the grinding machine of the factory started to build before with Allen Bradley
+PLC..

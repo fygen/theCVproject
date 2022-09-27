@@ -1,0 +1,3 @@
+The software I created for the android phones with `MitAppInventor2` and the vehicle MCU were provided
+with `Arduino`. The vehicle had modes to measure its own battery level, distance control and automode
+driving. The program is uploaded to the arduino with `C language`.

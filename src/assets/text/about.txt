@@ -1,0 +1,65 @@
+![this.isme](./assets/images/plhldr.jpg)
+
+FATIH YEGEN
+===
+Jr. FrontEnd\
+Js&React Developer\
+Electrics &Electronics Engineer
+--
+
+An Electrics&Electronics Engineer who hit the wall hard.\
+I mean the wall of expensive electronics.\
+After that started coding with Python and then continued my journey
+
+`Html-Css`,`JavaScript`,`React`, `D3`, `three.js`..
+
+Check my progress in FreeCodeCamp link below.
+
+WEBSITE
+---
+Built with ReactV18.2 + SCSS + ReactMarkdown
+
+SOCIAL
+--
+[![Linkedin Url](./assets/images/linkedin.svg)](https://www.linkedin.com/in/fatihyegen/ "View on Linkedin")
+[![Github Url](./assets/images/square-github-brands.svg)](https://github.com/fygen "View on Github")
+[![Instagram Url](./assets/images/square-instagram-brands.svg)](https://www.instagram.com/yegane.fatih/ "View on Instagram")
+[![FreeCodeCamp Url](./assets/images/freecodecamp.svg)](https://www.freecodecamp.org/fygen "View on FreeCodeCamp")
+
+CERTIFICATES
+---
+[![To Certificate](./assets/images/Backend.png)Backend Dev. & API's](https://www.freecodecamp.org/certification/fygen/back-end-development-and-apis "FreeCodeCamp Certification")
+---
+[![To Certificate](./assets/images/Reldabase.png)Relational Databases](https://www.freecodecamp.org/certification/fygen/relational-database-v8 "FreeCodeCamp Certification")
+---
+[![To Certificate](./assets/images/Frontend.png) Front End Development Libraries](https://www.freecodecamp.org/certification/fygen/front-end-development-libraries "FreeCodeCamp Certification")
+--
+[![To Certificate](./assets/images/Javascript.png) JavaScript Al. & Data Str.](https://www.freecodecamp.org/certification/fygen/javascript-algorithms-and-data-structures "FreeCodeCamp Certification")
+--
+[![To Certificate](./assets/images/Webdesign.png) Resp. Web Design](https://www.freecodecamp.org/certification/fygen/responsive-web-design "FreeCodeCamp Certification")
+--
+[![To Certificate](./assets/images/Pythonmd.png) Python Md. L](https://www.udemy.com/certificate/UC-f09f7667-0bd5-4a78-9df0-1d659ef8785e/ "Udemy Md. Python Certification")
+--
+[![To Certificate](./assets/images/PythonJr.png) Python Jr. L](https://academy.zenva.com/certificate/720a80d3 "Zenva Jr. Python Certification")
+--
+REACT PROJECTS
+---
+[![Showcase](./assets/images/5-25+5clock.png) 25+5 Clock](https://codepen.io/fygen/pen/qBoWYLj "To CodePen")
+--
+[![Showcase](./assets/images/4-JScalc.png) Js_Calculator](https://codepen.io/fygen/pen/PoQQBxo "To CodePen")
+--
+[![Showcase](./assets/images/3-DrumPad.png) Drumpad](https://codepen.io/fygen/pen/dyJxdeJ "To CodePen")
+--
+[![Showcase](./assets/images/2-MDrenderer.png) Markdown Renderer](https://codepen.io/fygen/pen/qBpzErb "To CodePen")
+--
+[![Showcase](./assets/images/1-RandQuote.png) Random Quoter](https://codepen.io/fygen/pen/rNpqZmr "To CodePen")
+--
+
+MAIL
+---
+[fatihyegen.09@gmail.com](mailto:fatihyegen.09@gmail.com "To mail")
+--
+PHONE
+---
+[+90 505 034 0009](tel:+905050340009 "Call me!")
+--

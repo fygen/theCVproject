@@ -1,0 +1,15 @@
+---
+Artillery Lieutenant (10,5 Months)(Compulsory Duty as a Ranked Soldier)
+====
+ARMY OF THE TURKEY - LAND FORCES Cyrenia, Cyprus
+----
+---
+* In Turkey every male has military duty. That is mandatory.
+* The ones which were succesful in the university are selected for ranked soldier.
+* The work I have done was about the engineering. Electrical diagrams of the houses which
+needed renovation those which belongs to the army.
+* Controlling the bills of electricity and the water consumption of all the army from `excel` sheets where I
+have learnt excel formulas to make it optimised for easier control.
+* Monthly,Electric Generator controls all army barracks in the Cyprus.
+
+![Common_deer](./assets/images/lieutenant.jpg)
