@@ -179,7 +179,7 @@ h2 {
      }
 
      img {
-          margin: 0 25% !important;
+          margin: 0 25%;
           max-height: 50%;
           width: 50%;
      }
@@ -276,7 +276,11 @@ h2 {
 .expand {
      min-width: 96vw;
      min-height: 100vh;
-     margin-left: -33vw;
+     animation: 1s;
+}
+
+#toproj {
+     display: none;
 }
 
 @keyframes slideToRight {
@@ -318,5 +322,78 @@ h2 {
 
      100% {
           transform: scale(1, 1) translateY(0) rotate(360deg);
+     }
+}
+
+@media only screen and (max-width: 748px) {
+     .expand {
+          animation: none !important;
+          min-width: 92vw;
+          min-height: 96vh;
+          justify-content: center;
+          align-items: center;
+          transition: 1s;
+     }
+
+     #toproj {
+          display: block;
+          height: 30vh;
+          width: 30vw;
+          font-size: 5rem;
+          transform: rotate(-45deg) translateY(100px);
+     }
+     .inv{
+          filter: invert(100%);
+     }
+     .rot{
+          transform: rotate(180deg);
+     }
+
+     #projects {
+          animation: secbacktoleft 1s ease forwards;
+     }
+
+     #experiences {
+          animation: secbacktoright 1s ease forwards;
+     }
+
+     #about {
+          min-width: min-content;
+     }
+
+     .section {
+          max-width: 33vw !important;
+     }
+
+     @keyframes secbacktoleft {
+          0% {
+               transform: perspective(100px) translateZ(0px);
+          }
+
+          100% {
+               transform: perspective(1000px) translateZ(-3000px) translateY(-5500px) translateX(150px);
+          }
+     }
+
+     @keyframes secbacktoright {
+          0% {
+               transform: perspective(100px) translateZ(0px);
+          }
+
+          100% {
+               transform: perspective(1000px) translateZ(-3000px) translateY(-5500px) translateX(-150px);
+          }
+     }
+
+
+
+     @keyframes turnToPhone {
+          0% {
+               transform: perspective(1000px) rotateY(-0deg) translateX(-50%);
+          }
+
+          100% {
+               transform: perspective(1000px) rotateY(-120deg) translateX(-50%);
+          }
      }
 }

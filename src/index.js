@@ -1,7 +1,7 @@
 "use strict";
 import "./style.scss";
 import React from "react";
-import { useReducer, useState, useEffect } from "react";
+import { useReducer, useState, useEffect, useLayoutEffect } from "react";
 import { createRoot } from 'react-dom/client';
 import ReactMarkdown from "react-markdown";
 import { production, automation, arge, about } from "./assets/scripts/experiences.js";
@@ -10,6 +10,7 @@ import { reactJs, vertibird, matlab, incubator, thesis } from "./assets/scripts/
 const experienceTexts = [automation, production, arge];
 const projectTexts = [reactJs, vertibird, matlab, incubator, thesis];
 
+const ANDRO = 749;
 const UEXP = "UEXP";
 const UNMD = "UNMD";
 const UBOOL = "UBOOL";
@@ -50,7 +51,7 @@ const scroll = (projName) => {
      const section = document.querySelector('#' + projName);
      setTimeout(() =>
           section.scrollIntoView({ behaviour: 'smooth', block: 'start' })
-          , 0)
+          , 10)
 };
 
 const OnOffButtton = (props) => {
@@ -142,9 +143,10 @@ const OnOffButtton = (props) => {
      }
 
      return (
+
           <div className="flex">
                <div className="flexb" onClick={toggleFullScreen}>
-                    <svg class="options" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">{!fullscr?<path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />:<path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z" />}</svg>
+                    <svg className="options" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">{!fullscr ? <path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" /> : <path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z" />}</svg>
                     {fullscr ? "Minimized " : "Fullscreen "}|
                </div>
                <div className="flex" onClick={changeNM}>
@@ -155,7 +157,7 @@ const OnOffButtton = (props) => {
                     </div>
                </div>
           </div>
-     )
+     );
 }
 
 const ShineTalents = (props) => {
@@ -197,12 +199,13 @@ function ProjFrame(props) {
 
 const ProjBank = (props) => {
      const [state, dispatch] = [props.state, props.dispatch];
-
-     return projectTexts && projectTexts.map((text, index) => {
-          return (
-               <ProjFrame state={state} dispatch={dispatch} key={index} text={text} name={projFolders[index]} />
-          )
-     })
+     return (
+          <>
+               {projectTexts && projectTexts.map((text, index) =>
+                    (<ProjFrame state={state} dispatch={dispatch} key={index} text={text} name={projFolders[index]} />))
+               }
+          </>
+     )
 }
 
 const ExpFrame = (props) => {
@@ -233,8 +236,23 @@ const About = () => {
 
 const App = () => {
      const [state, dispatch] = useReducer(reducer, initialState);
+     const [andro, setAndro] = useState(window.innerWidth);
      const whoExpanded = state.whExpanded;
-     const objExpand = whoExpanded === "experiences" ? " expand" : "";
+     const objExpand = whoExpanded === "all" ? "" : " expand";
+     const showButton = ANDRO > andro;
+
+     useLayoutEffect(() => {
+          window.setTimeout(() => {
+               let updateSize = () => { setAndro(window.innerWidth) }
+               updateSize();
+               window.addEventListener('onload', updateSize);
+               window.addEventListener('resize', updateSize)
+               return () => {
+                    window.removeEventListener('resize', updateSize);
+                    window.removeEventListener('onload', updateSize);
+               }
+          }, 10)
+     })
 
      const checkHide = (val) => {
           if (val === whoExpanded) {
@@ -253,7 +271,8 @@ const App = () => {
                          <div className="debug hidden">
                               {"whExpanded: " + state.whExpanded}<br />
                               {"nightMode: " + state.nightMode}<br />
-                              {"fullscr: " + state.fullscr}
+                              {"fullscr: " + state.fullscr} <br />
+                              {"andro: " + andro}
                          </div>
                          <h1 className="header grow"></h1>
                          <code className="shrink">TLDR Fullscreen DarkMode</code>
@@ -263,7 +282,9 @@ const App = () => {
                          </div>
                     </div>
                     <div className="sections">
-                         <div className={"section" + checkHide("projects")} id="projects">
+                         <div className={"section" + checkHide("projects") + objExpand} id="projects">
+                              {showButton && <img onClick={() => { checkExpand("projects", state, dispatch); scroll("reactJs") }}
+                                   className={state.nightMode ? null : "inv"} src={state.whExpanded == "projects" ? "./assets/images/right.svg" : "./assets/images/left.svg"} />}
                               <h1 className="flex border">PROJECTS</h1>
                               <ProjBank state={state} dispatch={dispatch} />
                          </div>
@@ -271,6 +292,8 @@ const App = () => {
                               <About />
                          </div>
                          <div className={"section" + checkHide("experiences") + objExpand} id="experiences">
+                              {showButton && <img onClick={() => { checkExpand("experiences", state, dispatch); scroll("automation") }} style={{ minWidth: "100%", margin: "0" }}
+                                   className={state.nightMode ? null : "inv"} src={state.whExpanded == "experiences" ? "./assets/images/left.svg" : "./assets/images/right.svg"} />}
                               <h1 className="flex">EXPERIENCES</h1>
                               <ExpBank state={state} dispatch={dispatch} />
                          </div>
